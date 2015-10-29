@@ -13,7 +13,10 @@ public class PunchOrKickMaster implements IPlayable{
 			return 4;
 		else if (input.contains("kick"))
 			return 5;
-		System.out.println("Invalid Input");
+		else if (input.contains("both"))
+			System.out.println("Fuck you. You can't have both!");
+		else
+			System.out.println("Invalid Input");
 		return 3; // plays this mission again
 	}
 }
